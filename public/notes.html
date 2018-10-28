@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Note Taker App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/notes.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand align-vertical-center" href="#">Note Taker</a>
+        </div>
+        <button class="btn btn-danger btn-new-note">New</button>
+        <div class="icons">
+          <i class="fa fa-save" aria-hidden="true" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Press ESC to exit edit mode"></i>
+          <i class="fa fa-pencil" aria-hidden="true" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-content="Click to enter edit mode"></i>
+        </div>
+    </nav>
+    <div class="container-fluid main-container">
+        <div class="row">
+            <div class="col-md-4 border-right">
+              <div >
+                <ul id="sortable" class="list-group">
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <input type="text" id="note-title" name="note-title" class="note-title" placeholder="Note Title" readonly>
+              <textarea id="note-text" class="note-text" placeholder="Click on write icon to edit..." readonly></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

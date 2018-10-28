@@ -1,0 +1,151 @@
+body{
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  position: relative;
+  margin: 0;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+  height: 70.38px;
+  color: #FFF;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #FFF !important;
+}
+
+.align-vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+
+.icons{
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(94vw, -50%);
+}
+
+.icons:hover{
+  cursor: pointer;
+}
+
+.btn-new-note{
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(88vw, -50%);
+}
+
+.popover-content {
+    color: black;
+}
+
+.fa-save{
+  display: none;
+}
+
+.fa-pencil{
+  display: block;
+}
+
+.list-group-item i.fa-arrows-v{
+  float: none;
+  padding-right: 15px;
+  font-size: inherit;
+}
+
+.header-panel{
+  margin: 0;
+  width: 100%;
+  background-color:#e9ecef;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.header-panel h1{
+  font-size: 6rem;
+}
+
+.header-panel h2{
+  font-size: 3.5rem;
+}
+
+.header-panel h1, .header-panel h2{
+  text-align: center;
+  color: black;
+}
+
+.header-panel h1{
+  padding: 50px 0 20px 0;
+  margin-top: auto;
+}
+
+.header-panel h2{
+  padding-bottom: 30px;
+}
+
+a, a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+#btn-group{
+  padding: 0 0 50px 0;
+}
+
+.border-right{
+  border-right: 1px solid rgba(0,0,0,0.125);
+}
+
+.main-container div{
+  height: calc(100vh - 70.38px);
+  padding: 0;
+}
+
+.list-group-item{
+  padding: 20px;
+  cursor: pointer;
+}
+
+.list-group-item span{
+  font-size: 1.7rem;
+  color: #757575;
+}
+
+.list-group-item i {
+  float: right;
+  font-size: 2.1rem;
+  cursor: pointer;
+}
+
+.note-title, .note-title:focus, .note-text, .note-text:hover{
+  border: none;
+  outline: none;
+  padding-left: 34px;
+  width: 100%;
+}
+
+.note-title{
+  height: 60px;
+  margin-top: 13px;
+  font-size: 5rem;
+}
+
+.note-text{
+  height: calc(100% - 63px);
+  padding-top: 15px;
+  color: #757575;
+}
