@@ -86,6 +86,7 @@ $(document).ready(function(){
                 $('#note-text').val('');
               });
               newNote = true;
+              newNoteBtn.css("display","none");
           });
           /***************************************/
         });
